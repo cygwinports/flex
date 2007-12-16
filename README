@@ -9,15 +9,18 @@ features such as exclusive start conditions.
 
 Runtime requirements:
   cygwin-1.5.24-2
+  libintl8-0.15-1
 
 Build requirements:
   cygwin-1.5.24-2
   autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
   binutils-20060817-1
   bison-2.3-1
-  cygport-0.3.5-1
+  cygport-0.3.7-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
+  gettext-0.15-1
   make-3.81-1
   sed-4.1.5-2
 
@@ -30,15 +33,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack flex-2.5.33-X-src.tar.bz2
+  unpack flex-2.5.34-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./flex-2.5.33-X.cygport all
+  cygport ./flex-2.5.34-X.cygport all
 
 This will create:
-  /usr/src/flex-2.5.33-X-src.tar.bz2
-  /usr/src/flex-2.5.33-X.tar.bz2
+  /usr/src/flex-2.5.34-X-src.tar.bz2
+  /usr/src/flex-2.5.34-X.tar.bz2
 
 -------------------------------------------
 
@@ -50,15 +53,16 @@ Files included in the binary package:
   /usr/bin/lex
   /usr/include/FlexLexer.h
   /usr/lib/libfl.a
-  /usr/share/doc/Cygwin/flex-2.5.33.README
-  /usr/share/doc/flex-2.5.33/ABOUT-NLS
-  /usr/share/doc/flex-2.5.33/AUTHORS
-  /usr/share/doc/flex-2.5.33/COPYING
-  /usr/share/doc/flex-2.5.33/INSTALL
-  /usr/share/doc/flex-2.5.33/NEWS
-  /usr/share/doc/flex-2.5.33/README
-  /usr/share/doc/flex-2.5.33/THANKS
-  /usr/share/doc/flex-2.5.33/TODO
+  /usr/lib/libfl_pic.a
+  /usr/share/doc/flex-2.5.34/ABOUT-NLS
+  /usr/share/doc/flex-2.5.34/AUTHORS
+  /usr/share/doc/flex-2.5.34/COPYING
+  /usr/share/doc/flex-2.5.34/ChangeLog
+  /usr/share/doc/flex-2.5.34/INSTALL
+  /usr/share/doc/flex-2.5.34/NEWS
+  /usr/share/doc/flex-2.5.34/README
+  /usr/share/doc/flex-2.5.34/THANKS
+  /usr/share/doc/flex-2.5.34/TODO
   /usr/share/info/flex.info-1.gz
   /usr/share/info/flex.info-2.gz
   /usr/share/info/flex.info.gz
@@ -83,6 +87,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.5.34-1 -----
+Version bump.
 
 ----- version 2.5.33-3 -----
 Added Gentoo setlocale patch (Gentoo bug 186092).
