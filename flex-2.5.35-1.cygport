@@ -1,0 +1,18 @@
+DESCRIPTION="A fast lexical analyzer generator"
+HOMEPAGE="http://flex.sourceforge.net/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
+PATCH_URI="
+	mirror://portage/sys-devel/${PN}/files/${PN}-2.5.34-isatty.patch
+"
+
+DIFF_EXCLUDES="conf.in"
+
+MAKEOPTS+=" LIBS=-lintl"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	dosym flex.exe /usr/bin/flex++
+	dosym flex.exe /usr/bin/lex
+}

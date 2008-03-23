@@ -8,16 +8,15 @@ It features a Lex compatibility mode, and also provides several new
 features such as exclusive start conditions.
 
 Runtime requirements:
-  cygwin-1.5.24-2
+  cygwin-1.5.25-7
   libintl8-0.15-1
 
 Build requirements:
-  cygwin-1.5.24-2
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
   bison-2.3-1
-  cygport-0.3.7-1
+  cygport-0.3.8-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   gettext-0.15-1
@@ -33,15 +32,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack flex-2.5.34-X-src.tar.bz2
+  unpack flex-2.5.35-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./flex-2.5.34-X.cygport all
+  cygport ./flex-2.5.35-X.cygport all
 
 This will create:
-  /usr/src/flex-2.5.34-X-src.tar.bz2
-  /usr/src/flex-2.5.34-X.tar.bz2
+  /usr/src/flex-2.5.35-X-src.tar.bz2
+  /usr/src/flex-2.5.35-X.tar.bz2
 
 -------------------------------------------
 
@@ -54,15 +53,15 @@ Files included in the binary package:
   /usr/include/FlexLexer.h
   /usr/lib/libfl.a
   /usr/lib/libfl_pic.a
-  /usr/share/doc/flex-2.5.34/ABOUT-NLS
-  /usr/share/doc/flex-2.5.34/AUTHORS
-  /usr/share/doc/flex-2.5.34/COPYING
-  /usr/share/doc/flex-2.5.34/ChangeLog
-  /usr/share/doc/flex-2.5.34/INSTALL
-  /usr/share/doc/flex-2.5.34/NEWS
-  /usr/share/doc/flex-2.5.34/README
-  /usr/share/doc/flex-2.5.34/THANKS
-  /usr/share/doc/flex-2.5.34/TODO
+  /usr/share/doc/flex-2.5.35/ABOUT-NLS
+  /usr/share/doc/flex-2.5.35/AUTHORS
+  /usr/share/doc/flex-2.5.35/COPYING
+  /usr/share/doc/flex-2.5.35/ChangeLog
+  /usr/share/doc/flex-2.5.35/INSTALL
+  /usr/share/doc/flex-2.5.35/NEWS
+  /usr/share/doc/flex-2.5.35/README
+  /usr/share/doc/flex-2.5.35/THANKS
+  /usr/share/doc/flex-2.5.35/TODO
   /usr/share/info/flex.info-1.gz
   /usr/share/info/flex.info-2.gz
   /usr/share/info/flex.info.gz
@@ -87,6 +86,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.5.35-1 -----
+Version bump.
 
 ----- version 2.5.34-1 -----
 Version bump.
