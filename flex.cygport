@@ -1,0 +1,24 @@
+NAME="flex"
+VERSION=2.5.37
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="A fast lexical analyzer generator"
+DESCRIPTION="Flex is a fast lexical analyser generator. It is a tool for
+generating programs that perform pattern-matching on text. There are many
+applications for Flex, including writing compilers in conjunction with GNU
+Bison. It features a Lex compatibility mode, and also provides several new
+features such as exclusive start conditions."
+HOMEPAGE="http://flex.sourceforge.net/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
+
+DIFF_EXCLUDES="conf.in"
+
+CYGCONF_ARGS="--without-libiconv-prefix --without-libintl-prefix"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	dosym flex.exe /usr/bin/flex++
+	dosym flex.exe /usr/bin/lex
+}
