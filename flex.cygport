@@ -18,6 +18,8 @@ PATCH_URI="
 
 DIFF_EXCLUDES="conf.in"
 
+REQUIRES="m4"
+
 src_install() {
 	cd ${B}
 	cyginstall
